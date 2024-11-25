@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor App</title>
+    <link rel="stylesheet" href="./text.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h1>Text Editor</h1>
+        <textarea id="text-input" placeholder="Type your text here..."></textarea>
+        <div class="controls">
+            <button class="btn" onclick="formatText('bold')">Bold</button>
+            <button class="btn" onclick="formatText('italic')">Italic</button>
+            <button class="btn" onclick="formatText('underline')">Underline</button>
+            <button class="btn" onclick="clearFormatting()">Clear Formatting</button>
+            <button class="btn" onclick="convertText('camelCase')">To camelCase</button>
+            <button class="btn" onclick="convertText('snake_case')">To snake_case</button>
+            <button class="btn" onclick="convertText('PascalCase')">To PascalCase</button>
+            <button class="btn" onclick="analyzeText()">Analyze Text</button>
+        </div>
+        <div id="analysis-output"></div>
+    </div>
+    <script src="./text.js"></script>
+</body>
+</html>
